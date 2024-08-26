@@ -2,7 +2,7 @@
 def factorial(n = 3):
     fact = 1
     print(fact)
-    for num in range(2, n + 1):
+    for num in range(2, n + 1)
         fact *= num
     return fact
 
