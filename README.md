@@ -2,4 +2,4 @@
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 ![Platform](https://img.shields.io/badge/platform-linux-blue.svg)
 ![Tests Passing:](https://github.com/CSCI510testerhw1/hw1/actions/workflows/python-app.yml/badge.svg)
-![coverage](https://github.com/CSCI510testerhw1/hw1/actions/workflows/python-app.yml/coverage.svg?job=Test_with_pytest)
+[![Coverage Status](./reports/coverage/coverage-badge.svg?dummy=8484744)](./reports/coverage/index.html)
