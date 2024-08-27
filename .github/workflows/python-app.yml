@@ -29,9 +29,10 @@ jobs:
     - name: Code Coverage
       run: |
         pip install genbadge[all]
+        pip install coverage
         coverage report
         coverage xml
-        coverage html
+        genbadge coverage
     - name: Test_with_pytest
       run: |
         pip install pytest pytest-cov
