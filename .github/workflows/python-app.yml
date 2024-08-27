@@ -37,5 +37,5 @@ jobs:
         pip install coverage
         coverage report tests.py
         coverage xml tests.py
-        genbadge coverage
+        genbadge coverage -i ./coverage.xml
     
