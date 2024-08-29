@@ -38,4 +38,5 @@ jobs:
         coverage report tests.py
         coverage xml tests.py
         genbadge coverage -i ./coverage.xml
+        ls /home/runner/work/hw1/hw1/coverage-badge.svg
     
