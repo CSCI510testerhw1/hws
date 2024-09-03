@@ -1,19 +1,22 @@
 """This module imports the random_array() function from rand.py and uses it to
-generate, then sort a random array in ascending order using the 
+generate, then sort a random array in ascending order using the
 merge sort algorithm"""
 import rand
 
 
-def mergeSort(arr):
+def merge_sort(arr):
+    """This function calls the recombine function in order to sort the input arr"""
     if len(arr) == 1:
         return arr
 
     half = len(arr) // 2
 
-    return recombine(mergeSort(arr[:half]), mergeSort(arr[half:]))
+    return recombine(merge_sort(arr[:half]), merge_sort(arr[half:]))
 
 
 def recombine(leftArr, rightArr):
+    """This function compares the parameter arrays index by index, combining them into
+    a single array mergeArr that holds the sorted values."""
     leftIndex = 0
     rightIndex = 0
     mergeArr = [None] * (len(leftArr) + len(rightArr))
@@ -35,6 +38,6 @@ def recombine(leftArr, rightArr):
 
 
 arr = rand.random_array([None] * 20)
-arr_out = mergeSort(arr)
+arr_out = merge_sort(arr)
 
 print(arr_out)

@@ -8,8 +8,9 @@ def random_array(arr):
     and uses the subprocess.run function in order to generate random integers between
     1 and 20 and fill the array with these random values."""
     shuffled_num = None
+    #for index, value in enumerate(arr):
     for i in range(len(arr)):
         shuffled_num = subprocess.run(
             ["shuf", "-i1-20", "-n1"], capture_output=True, check=True)
-        arr[i] = int(shuffled_num.stdout)
+        arr[i] = int(shuffled_num.stdout) #value =
     return arr
