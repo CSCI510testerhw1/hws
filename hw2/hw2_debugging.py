@@ -2,7 +2,7 @@
 generate, then sort a random array in ascending order using the
 merge sort algorithm"""
 import rand
-
+import pdb
 
 def merge_sort(arr):
     """This function calls the recombine function in order to sort the input arr"""
@@ -20,6 +20,7 @@ def recombine(left_arr, right_arr):
     left_index = 0
     right_index = 0
     merge_arr = [None] * (len(left_arr) + len(right_arr))
+    breakpoint()
     while left_index < len(left_arr) and right_index < len(right_arr):
         #print(left_arr)
         #print(right_arr)
