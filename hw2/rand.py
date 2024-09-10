@@ -7,7 +7,7 @@ def random_array(arr):
     """This function accepts an array of size n as a parameter,
     and uses the subprocess.run function in order to generate random integers between
     1 and 20 and fill the array with these random values."""
-    print(arr)
+    #print(arr)
     shuffled_num = None
     # for val in enumerate(arr):
     for i in range(len(arr)): 
