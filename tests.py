@@ -19,3 +19,13 @@ def test_merge_sort_ascending_order(): #Test 2: Already Sorted Array
     
     assert sorted_arr == test_arr
     assert len(sorted_arr) == 20
+
+def test_merge_sort_descending_order(): #Test 3: Reverse Sorted Array
+    
+    test_arr = list(range(20, 0, -1))  # [20, 19, ..., 1]
+    
+    sorted_arr = merge_sort(test_arr)
+    
+    assert sorted_arr == list(range(1, 21))
+    assert len(sorted_arr) == 20
+    
