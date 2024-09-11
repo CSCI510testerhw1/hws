@@ -9,10 +9,10 @@ def random_array(arr):
     1 and 20 and fill the array with these random values."""
     # print(arr)
     shuffled_num = None
-    # for val in enumerate(arr):
-    for i in range(len(arr)):
+    # for i in range(len(arr)):
+    for i, _ in enumerate(arr):
         shuffled_num = subprocess.run(
             ["shuf", "-i1-20", "-n1"], capture_output=True, check=True)
-        arr[i] = int(shuffled_num.stdout)  # val =
+        arr[i] = int(shuffled_num.stdout)  # arr[i]
     print(arr)
     return arr
