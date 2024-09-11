@@ -1,11 +1,13 @@
 import pytest
-from hw1 import factorial
+from hw2.hw2_debugging import merge_sort
+from hw2 import rand
 
-
-#factorial of 0 test, this test case passes
-def test_factorial_zero():
-    assert factorial(0)==1, "Factorial of 0 must return 1"
-
-#factorial of 3 ttest, this fails as factorial of 3 is 6 and not 1
-def test_factorial_zero():
-    assert factorial(3)==1, "Factorial of 3 must return 1"
+def test_merge_sort_random_array():
+    
+    test_arr = rand.random_array([None] * 20)
+    sorted_arr = merge_sort(test_arr)
+    
+    assert sorted(test_arr) == sorted_arr
+    assert len(sorted_arr) == 20
+    assert all(1 <= x <= 20 for x in sorted_arr)
+    

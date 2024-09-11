@@ -1,7 +1,7 @@
 """This module imports the random_array() function from rand.py and uses it to
 generate, then sort a random array in ascending order using the
 merge sort algorithm"""
-import rand
+from hw2 import rand 
 
 
 def merge_sort(arr):
