@@ -1,10 +1,11 @@
 import pytest
+from hw2.rand import random_array
 from hw2.hw2_debugging import merge_sort
-from hw2.rand import rand
+
 
 def test_merge_sort_random_array(): # Test 1: Random Array
     
-    test_arr = rand.random_array([None] * 20)
+    test_arr = random_array([None] * 20)
     sorted_arr = merge_sort(test_arr)
     
     assert sorted(test_arr) == sorted_arr
