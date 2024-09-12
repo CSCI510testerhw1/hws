@@ -52,6 +52,8 @@ jobs:
         anybadge -l pylint -v 3.33 -f ./hw2/pylint.svg 2=red 4=orange 8=yellow 10=green
         anybadge -l pyflakes -v 3.20 -f ./hw2/pyflakes.svg --color='#97CA00'
         anybadge -l autopep8 -v 2.13 -f ./hw2/autopep8.svg --color='#97CA00'
+        git config --global user.email "anirudhkaluri@gmail.com"
+        git config --global user.name "Anirudh Kaluri"
         git add .
         git commit -m "badges updated"
         git push
