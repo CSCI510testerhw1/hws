@@ -1,0 +1,31 @@
+hw2/rand.py
+    F 6:0 random_array - A
+hw2/hw2_debugging.py
+    F 17:0 recombine - B
+    F 7:0 merge_sort - A
+hw2/rand.py - A
+hw2/hw2_debugging.py - A
+hw2/rand.py
+    LOC: 18
+    LLOC: 10
+    SLOC: 9
+    Comments: 3
+    Single comments: 2
+    Multi: 5
+    Blank: 2
+    - Comment Stats
+        (C % L): 17%
+        (C % S): 33%
+        (C + M % L): 44%
+hw2/hw2_debugging.py
+    LOC: 49
+    LLOC: 31
+    SLOC: 27
+    Comments: 6
+    Single comments: 5
+    Multi: 5
+    Blank: 12
+    - Comment Stats
+        (C % L): 12%
+        (C % S): 22%
+        (C + M % L): 22%

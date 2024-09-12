@@ -1,0 +1,2 @@
+Pyflakes doesnt find any issues and hence doesnt write to this file when the following command is executed:
+"pyflakes ./hw2 > ./hw2/post_traces/hw2_pyflakes_debug.txt"

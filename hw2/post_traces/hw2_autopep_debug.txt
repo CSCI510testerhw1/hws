@@ -1,11 +1,2 @@
---- original/./hw2/hw2_debugging.py
-+++ fixed/./hw2/hw2_debugging.py
-@@ -1,7 +1,7 @@
- """This module imports the random_array() function from rand.py and uses it to
- generate, then sort a random array in ascending order using the
- merge sort algorithm"""
--from hw2 import rand 
-+from hw2 import rand
- 
- 
- def merge_sort(arr):
+Autopep8 doesnt have any suggestions after running the following command
+"autopep8 --aggressive --aggressive --aggressive --recursive --diff ./hw2 > ./hw2/post_traces/hw2_autopep_debug.txt"
