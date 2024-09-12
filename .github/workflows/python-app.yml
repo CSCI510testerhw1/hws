@@ -30,6 +30,7 @@ jobs:
         pip install pyflakes 
         pip install pylint 
         pip install radon
+        pip install anybadge
     - name: Run_static_analysis_tools
       run: |
         autopep8 --aggressive --aggressive --aggressive --recursive --diff ./hw2
@@ -42,13 +43,10 @@ jobs:
       run: |
         pip install pytest pytest-cov
         pytest tests.py
-    - name: Code Coverage
+    - name: badges
       if: always()
       run: |
-        pip install genbadge[all]
-        pip install coverage
-        coverage report tests.py
-        coverage xml tests.py
-        genbadge coverage -i ./coverage.xml
-        ls /home/runner/work/hws/hws/coverage-badge.svg
+        anybadge -l pylint -v 3.33 -f ./hw2/pylint.svg 2=red 4=orange 8=yellow 10=green
+        anybadge -l pyflakes -v 3.20 -f ./hw2/pyflakes.svg --color='#97CA00'
+        anybadge -l autopep8 -v 2.13 -f ./hw2/autopep8.svg --color='#97CA00'
     

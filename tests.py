@@ -1,6 +1,6 @@
 import pytest
 from hw2.hw2_debugging import merge_sort
-from hw2 import rand
+from hw2.rand import rand
 
 def test_merge_sort_random_array(): # Test 1: Random Array
     
