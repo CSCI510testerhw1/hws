@@ -2,6 +2,6 @@
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 ![Platform](https://img.shields.io/badge/platform-linux-blue.svg)
 ![Tests Passing:](https://github.com/CSCI510testerhw1/hws/actions/workflows/python-app.yml/badge.svg)
-![Autopep9:](./hw2/autopep8.svg)
+![Autopep8:](./hw2/autopep8.svg)
 ![Pylint:](./hw2/pylint.svg)
 ![Pyflakes:](./hw2/pyflakes.svg)
