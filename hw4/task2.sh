@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -c "CSC510" \dataset1/file*| grep -E ":[3-9]$" | cut -d: -f1
+grep "CSC510" \dataset1/file* | sort | uniq -c | cut -d: -f1 | grep -E -v "[1-2] " | grep -E -o "file_[0-9]*"
